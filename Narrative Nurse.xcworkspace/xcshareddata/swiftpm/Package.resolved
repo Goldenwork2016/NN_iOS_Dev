@@ -1,0 +1,43 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "BetterSegmentedControl",
+        "repositoryURL": "https://github.com/gmarm/BetterSegmentedControl.git",
+        "state": {
+          "branch": null,
+          "revision": "a2b2116761f71320cee7e69b4249863f0f372c71",
+          "version": "2.0.1"
+        }
+      },
+      {
+        "package": "Expression",
+        "repositoryURL": "https://github.com/nicklockwood/Expression.git",
+        "state": {
+          "branch": null,
+          "revision": "79696716b913c816d8dd1c135293de266a01a098",
+          "version": "0.13.2"
+        }
+      },
+      {
+        "package": "SnapKit",
+        "repositoryURL": "https://github.com/SnapKit/SnapKit.git",
+        "state": {
+          "branch": null,
+          "revision": "d458564516e5676af9c70b4f4b2a9178294f1bc6",
+          "version": "5.0.1"
+        }
+      },
+      {
+        "package": "SubviewAttachingTextView",
+        "repositoryURL": "https://github.com/vlas-voloshin/SubviewAttachingTextView.git",
+        "state": {
+          "branch": null,
+          "revision": "6025828b6c05fbf5529616a70c702f7425899fe5",
+          "version": "1.5.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

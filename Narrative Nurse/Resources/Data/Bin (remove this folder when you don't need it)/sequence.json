@@ -1,0 +1,989 @@
+{
+    "replacements": [
+        {
+            "oldValue": "Client",
+            "newValue": "Person"
+        }
+    ],
+    "questions": [
+      {
+        "question": "Does your client have any cognitive impairments?",
+        "id": "8283afb0-5940-11ea-82b4-0242ac130003",
+        "kind": {
+                        "type": "list",
+              "multiselection": false
+        },
+        "narrative": {
+            "afterChildren": "Block completed"
+        },
+        "options": [
+          {
+            "title": "Yes",
+            "narrative": "",
+            "id": "c33a1059a-5941-11ea-82b4-0242ac130003"
+          },
+          {
+            "title": "No",
+            "narrative": "Client is alert and oriented to person, place, time, and situation with no memory impairments, confusion, or difficulty making decisions.",
+            "id": "33a107c0-5941-11ea-82b4-0242ac130003"
+          }
+        ],
+        "children": [
+          {
+            "question": "Is your client alert?",
+            "id": "8283afb0-5940-11ea-82b4-0242ac130003_yes",
+            "kind": {
+                            "type": "list",
+              "multiselection": false
+            },
+            "options": [
+              {
+                "title": "Yes",
+                "narrative": "Client is alert",
+                "id": "33a1059a-5941-11ea-82b4-0242ac130003"
+              },
+              {
+                "title": "No",
+                "narrative": "Client is not alert or oriented.",
+                "id": "33a107c0-5941-11ea-82b4-0242ac130003"
+              }
+            ],
+            "rule": "isSelected('8283afb0-5940-11ea-82b4-0242ac130003', 'c33a1059a-5941-11ea-82b4-0242ac130003')",
+            "children": []
+          },
+          {
+            "question": "Select orientation.",
+            "id": "8283afb0-5940-11ea-82b4-0242ac130003_no",
+            "rule": "isSelected('8283afb0-5940-11ea-82b4-0242ac130003', 'c33a1059a-5941-11ea-82b4-0242ac130003')",
+            "kind": {
+                            "type": "list",
+              "multiselection": false
+            },
+            "options": [
+              {
+                "title": "Some orientation",
+                "narrative": "and oriented to",
+                "id": "33a1059a-5941-11ea-82b4-0242ac130003"
+              },
+              {
+                "title": "Not oriented",
+                "narrative": "but not oriented to person, place, time, or situation.",
+                "id": "33a107c0-5941-11ea-82b4-0242ac130003"
+              }
+            ],
+            "children": [
+              {
+                "question": "Oriented to self?",
+                "id": "8283afb0-5940-11ea-82b4-0242asdac130003_yes",
+                "rule": "isSelected('8283afb0-5940-11ea-82b4-0242ac130003_no', '33a1059a-5941-11ea-82b4-0242ac130003')",
+                "kind": {
+                                "type": "list",
+              "multiselection": false
+                },
+                "options": [
+                  {
+                    "title": "Yes",
+                    "narrative": " person",
+                    "id": "33a1059a-5941-11ea-82b4-0242ac130003"
+                  },
+                  {
+                    "title": "No",
+                    "narrative": "",
+                    "id": "33a107c0-5941-11ea-82b4-0242ac130003"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "question": "Oriented to place?",
+                "id": "8283afb0-5qwd940-11ea-82b4-0242asdac130003_yes",
+                "rule": "isSelected('8283afb0-5940-11ea-82b4-0242ac130003_no', '33a1059a-5941-11ea-82b4-0242ac130003')",
+                "kind": {
+                                "type": "list",
+              "multiselection": false
+                },
+                "options": [
+                  {
+                    "title": "Yes",
+                    "narrative": " place",
+                    "id": "33a1059a-5941-11ea-82b4-0242ac130003"
+                  },
+                  {
+                    "title": "No",
+                    "narrative": "",
+                    "id": "33a107c0-5941-11ea-82b4-0242ac130003"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "question": "Oriented to time?",
+                "id": "8283awqddfb0-5940-11ea-82b4-0242asdac130003_yes",
+                "rule": "isSelected('8283afb0-5940-11ea-82b4-0242ac130003_no', '33a1059a-5941-11ea-82b4-0242ac130003')",
+                "kind": {
+                                "type": "list",
+              "multiselection": false
+                },
+                "options": [
+                  {
+                    "title": "Yes",
+                    "narrative": " time",
+                    "id": "33a1059a-5941-11ea-82b4-0242ac130003"
+                  },
+                  {
+                    "title": "No",
+                    "narrative": "",
+                    "id": "33a107c0-5941-11ea-82b4-0242ac130003"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "question": "Oriented to situation?",
+                "id": "8283afb0-5qwdaqw940-11ea-82b4-0242asdac130003_yes",
+                "rule": "isSelected('8283afb0-5940-11ea-82b4-0242ac130003_no', '33a1059a-5941-11ea-82b4-0242ac130003')",
+                "kind": {
+                                "type": "list",
+              "multiselection": false
+                },
+                "options": [
+                  {
+                    "title": "Yes",
+                    "narrative": " situation",
+                    "id": "33a1059a-5941-11ea-82b4-0242ac130003"
+                  },
+                  {
+                    "title": "No",
+                    "narrative": "",
+                    "id": "33a107c0-5941-11ea-82b4-0242ac130003"
+                  }
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "question": "Does your client have memory impairments?",
+            "id": "8283afb0-5940-asdwq-82b4-0242ac130003_no",
+            "rule": "isSelected('8283afb0-5940-11ea-82b4-0242ac130003', 'c33a1059a-5941-11ea-82b4-0242ac130003')",
+            "kind": {
+                            "type": "list",
+              "multiselection": false
+            },
+            "options": [
+              {
+                "title": "Yes",
+                "narrative": "with",
+                "id": "33a1059a-5941-11ea-82b4-0242ac130003"
+              },
+              {
+                "title": "No",
+                "narrative": "with no memory impairments",
+                "id": "33a107c0-5941-11ea-82b4-0242ac130003"
+              }
+            ],
+            "children": [
+              {
+                "question": "Short-term memory impairment?",
+                "id": "8283afb0-59sa40-11ea-82b4-0242asdac130003_yes",
+                "rule": "isSelected('8283afb0-5940-asdwq-82b4-0242ac130003_no', '33a1059a-5941-11ea-82b4-0242ac130003')",
+                "kind": {
+                                "type": "list",
+              "multiselection": false
+                },
+                "options": [
+                  {
+                    "title": "Yes",
+                    "narrative": " short-term memory impairment",
+                    "id": "33a1059a-5941-11ea-82b4-0242ac130003"
+                  },
+                  {
+                    "title": "No",
+                    "narrative": "",
+                    "id": "33a107c0-5941-11ea-82b4-0242ac130003"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "question": "Long-term memory impairment?",
+                "id": "8283aefwwefb0-5qwd940-11ea-82b4-0242asdac130003_yes",
+                "rule": "isSelected('8283afb0-5940-asdwq-82b4-0242ac130003_no', '33a1059a-5941-11ea-82b4-0242ac130003')",
+                "kind": {
+                                "type": "list",
+              "multiselection": false
+                },
+                "options": [
+                  {
+                    "title": "Yes",
+                    "narrative": " long-term memory impairment",
+                    "id": "33a1059a-5941-11ea-82b4-0242ac130003"
+                  },
+                  {
+                    "title": "No",
+                    "narrative": "",
+                    "id": "33a107c0-5941-11ea-82b4-0242ac130003"
+                  }
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "question": "Does your client have difficulty making decisions?",
+            "id": "8283afb0-qwewq-11ea-82b4-0242asdac130003_yes",
+            "rule": "isSelected('8283afb0-5940-11ea-82b4-0242ac130003', 'c33a1059a-5941-11ea-82b4-0242ac130003')",
+            "kind": {
+                            "type": "list",
+              "multiselection": false
+            },
+            "options": [
+              {
+                "title": "Yes",
+                "narrative": "and difficulty making decisions.",
+                "id": "33a1059a-5941-11ea-82b4-0242ac130003"
+              },
+              {
+                "title": "No",
+                "narrative": "and no difficulty making decisions.",
+                "id": "33a107c0-5941-11ea-82b4-0242ac130003"
+              }
+            ],
+            "children": []
+          }
+        ],
+        "rule": "true"
+      },
+      {
+        "question": "Does your client have any sensory or speech impairments?",
+        "id": "8283afb0-5940-11ea-82b4-0242adsswc130003",
+        "kind": {
+                        "type": "list",
+              "multiselection": false
+        },
+        "options": [
+          {
+            "title": "Yes",
+            "narrative": "Client has",
+            "id": "33a1059a-5941-11ea-82b4-0242ac130003"
+          },
+          {
+            "title": "No",
+            "narrative": "Does not have difficulty seeing, hearing, talking, or making self understood.",
+            "id": "33a107c0-5941-11ea-82b4-0242ac130003"
+          }
+        ],
+        "rule": "true",
+        "children": [
+          {
+            "question": "Vision impairment?",
+            "id": "8283afb0-5940-11ea-8asd2b4-0242ac130003_yes",
+            "rule": "isSelected('8283afb0-5940-11ea-82b4-0242adsswc130003', '33a1059a-5941-11ea-82b4-0242ac130003')",
+            "kind": {
+                            "type": "list",
+              "multiselection": false
+            },
+            "options": [
+              {
+                "title": "Yes",
+                "narrative": "impaired vision",
+                "id": "33a1059a-5941-11ea-82b4-0242ac130003"
+              },
+              {
+                "title": "No",
+                "narrative": "",
+                "id": "33a107c0-5941-11ea-82b4-0242ac130003"
+              }
+            ],
+            "children": [
+              {
+                "question": "Corrective device for vision?",
+                "id": "8283afb0-5wsadaww940-11ea-82b4-0242asdac130003_yes",
+                "rule": "isSelected('8283afb0-5940-11ea-8asd2b4-0242ac130003_yes', '33a107c0-5941-11ea-82b4-0242ac130003')",
+                "kind": {
+                                "type": "list",
+              "multiselection": false
+                },
+                "options": [
+                  {
+                    "title": "Yes",
+                    "narrative": " and uses [VISION DEVICE] [FREQUENCY]",
+                    "id": "33a1059a-5941-11ea-82b4-0242ac130003"
+                  },
+                  {
+                    "title": "No",
+                    "narrative": " but does not use [VISION DEVICE] because [REASON]",
+                    "id": "33a107c0-5941-11ea-82b4-0242ac130003"
+                  }
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "question": "Hearing impairment?",
+            "id": "8fbbdsfdb30003_yes",
+            "rule": "isSelected('8283afb0-5940-11ea-82b4-0242adsswc130003', '33a1059a-5941-11ea-82b4-0242ac130003')",
+            "kind": {
+                            "type": "list",
+              "multiselection": false
+            },
+            "options": [
+              {
+                "title": "Yes",
+                "narrative": " impaired hearing",
+                "id": "33a1059a-5941-11ea-82b4-0242ac130003"
+              },
+              {
+                "title": "No",
+                "narrative": "",
+                "id": "33a107c0-5941-11ea-82b4-0242ac130003"
+              }
+            ],
+            "children": [
+              {
+                "question": "Corrective device for hearing?",
+                "id": "8283afb0-5wsawdwea-82b4-0242asdac130003_yes",
+                "rule": "isSelected('8fbbdsfdb30003_yes', '33a107c0-5941-11ea-82b4-0242ac130003')",
+                "kind": {
+                                "type": "list",
+              "multiselection": false
+                },
+                "options": [
+                  {
+                    "title": "Yes",
+                    "narrative": " and uses [HEARING DEVICE] [FREQUENCY]",
+                    "id": "33a1059a-5941-11ea-82b4-0242ac130003"
+                  },
+                  {
+                    "title": "No",
+                    "narrative": " but does not use [HEARING DEVICE] because [REASON]",
+                    "id": "33a107c0-5941-11ea-82b4-0242ac130003"
+                  }
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "question": "Verbalization impairment?",
+            "id": "8283sdvsevwev0242ac1sadaw03_yes",
+            "rule": "isSelected('8283afb0-5940-11ea-82b4-0242adsswc130003', '33a1059a-5941-11ea-82b4-0242ac130003')",
+            "kind": {
+                            "type": "list",
+              "multiselection": false
+            },
+            "options": [
+              {
+                "title": "Yes",
+                "narrative": " impaired verbalization",
+                "id": "33a1059a-5941-11ea-82b4-0242ac130003"
+              },
+              {
+                "title": "No",
+                "narrative": "",
+                "id": "33a107c0-5941-11ea-82b4-0242ac130003"
+              }
+            ],
+            "children": [
+              {
+                "question": "Corrective device for verbalization?",
+                "id": "8283afb0-5wqdq2dwea-82b4-0242asdac130003_yes",
+                "rule": "isSelected('8283sdvsevwev0242ac1sadaw03_yes', '33a107c0-5941-11ea-82b4-0242ac130003')",
+                "kind": {
+                                "type": "list",
+              "multiselection": false
+                },
+                "options": [
+                  {
+                    "title": "Yes",
+                    "narrative": " and uses [VERBALIZATION DEVICE] [FREQUENCY]",
+                    "id": "33a1059a-5941-11ea-82b4-0242ac130003"
+                  },
+                  {
+                    "title": "No",
+                    "narrative": " but does not use [VERBALIZATION DEVICE] because [REASON]",
+                    "id": "33a107c0-5941-11ea-82b4-0242ac130003"
+                  }
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "question": "Impairment making self understood?",
+            "id": "828wded35940svdsvsdvc1sadaw03_yes",
+            "rule": "isSelected('8283afb0-5940-11ea-82b4-0242adsswc130003', '33a1059a-5941-11ea-82b4-0242ac130003')",
+            "kind": {
+                            "type": "list",
+              "multiselection": false
+            },
+            "options": [
+              {
+                "title": "Yes",
+                "narrative": " difficulty making self understood",
+                "id": "33a1059a-5941-11ea-82b4-0242ac130003"
+              },
+              {
+                "title": "No",
+                "narrative": "",
+                "id": "33a107c0-5941-11ea-82b4-0242ac130003"
+              }
+            ],
+            "children": [
+              {
+                "question": "Corrective device for communication?",
+                "id": "8283aasdwqdq2dwea-82b4-0242asdac130003_yes",
+                "rule": "isSelected('828wded35940svdsvsdvc1sadaw03_yes', '33a1059a-5941-11ea-82b4-0242ac130003')",
+                "kind": {
+                                "type": "list",
+              "multiselection": false
+                },
+                "options": [
+                  {
+                    "title": "Yes",
+                    "narrative": " and uses [COMMUNICATION DEVICE] [FREQUENCY]",
+                    "id": "33a1059a-5941-11ea-82b4-0242ac130003"
+                  },
+                  {
+                    "title": "No",
+                    "narrative": " but does not use [COMMUNICATION DEVICE] because [REASON]",
+                    "id": "33a107c0-5941-11ea-82b4-0242ac130003"
+                  }
+                ],
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "question": "Who observed the behaviors?",
+        "id": "8283avsdsaadas42asdac130003_yes",
+        "rule": "true",
+        "kind": {
+          "type": "list",
+          "multiselection": false
+        },
+        "options": [
+          {
+            "title": "Nurse",
+            "narrative": "witnessed by this nurse",
+            "id": "33a1059asd1ea-82b4-0242ac130003"
+          },
+          {
+            "title": "Staff",
+            "narrative": " witnessed by staff",
+            "id": "33a10qwd941-11ea-82b4-0242ac130003"
+          },
+          {
+            "title": "Resident",
+            "narrative": " witnessed by other residents",
+            "id": "33a1059asfaawa-82b4-0242ac130003"
+          },
+          {
+            "title": "Visitor",
+            "narrative": " witnessed by visitor",
+            "id": "33a1059a-5dqwdea-82b4-0242ac130003"
+          }
+        ],
+        "children": []
+      }, {
+        "question": "Feel in your height and weight",
+        "id": "8283aeemp-wckon-mwoc-32s",
+        "rule": "true",
+        "outputToVariable": "A",
+        "kind": {
+          "type": "size"
+        },
+        "options": [
+          {
+            "title": "Height",
+            "unit": "m",
+            "narrative": " height ",
+            "id": "33a1059a-59sadsdasd42ac130003"
+          }, {
+            "title": "Weight",
+            "unit": "kg",
+            "narrative": " weight ",
+            "id": "33a1059ewf32f22ac130003"
+          }
+        ],
+        "children": []
+      }, {
+        "question": "Time behavior was witnessed.",
+        "id": "8283avsdvsdvs-82b4-0242asdac130003_yes",
+        "rule": "true",
+        "outputToVariable": "B",
+        "narrative": {
+            "before": {
+                "singular": "at"
+            },
+            "after": {
+                "singular": "today"
+            
+            }
+        },
+        "kind": {
+          "type": "dateTime",
+             "format":"h:mm a"
+        },
+        "options": [
+          {
+            "title": "",
+            "narrative": " at approx. ",
+            "id": "33a1059a-5941-11ea-82b4-0242ac130003"
+          }
+        ],
+        "children": [
+            {
+            "question": "VariablesToOutput Question",
+            "id": "8283avsdvsdvsdERGGERGE_yes",
+            "rule": "true",
+            "kind": {
+              "type": "variablesToOutput",
+              "variablesToOutput": ["B", "A"]
+            },
+            "options": [],
+            "children": []
+              }
+        ]
+      },
+	 {
+		 "question": "Pedal pulses",
+		 "id": "PedalPulses",
+		 "narrative": {"before": {"singular": "", "plural": ""}, "after": {"singular": "", "plural": ""}, "afterChildren": "."},
+		 "rule": "isSelected('CardiovascularImpairments?','CardiovascularImpairments?YES')",
+		 "kind": {                "type": "grouped",
+                "linkingVerb": {
+                    "plural": "are",
+                    "singular": "is"
+                },
+                "outputOrder": "Question/Answer"},
+		 "options": [
+       {
+			 "title": "",
+			 "narrative": "",
+       "narrativeAfter": "",
+       "beforeGroup": {
+        "plural": "",
+        "singular": ""
+    },
+    "afterGroup": {
+        "plural": "",
+        "singular": ""
+    },
+			 "id": "PedalPulsesAnswers",
+			 "options": [{
+				 "title": "Palpable",
+				 "narrative": "palpable",
+				 "id": "PedalPulsesAnswers|PALPABLE"
+			 },{
+				 "title": "Audible",
+				 "narrative": "audible",
+				 "id": "PedalPulsesAnswers|AUDIBLE"
+			 },{
+				 "title": "Not present",
+				 "narrative": "not present",
+				 "id": "PedalPulsesAnswers|NOTPRESENT"
+			 }],
+			 "children": [{
+				 "title": "All Pulses Left Foot",
+				 "narrative": "",
+				 "id": "PedalPulsesLeftFootAllNone",
+				 "children": [{
+					 "title": "Palpable",
+					 "narrative": "all pulses left foot palpable",
+					 "id": "PedalPulsesLeftFootAllNone|ALLPALPABLE",
+					 "none": true
+				 },{
+					 "title": "Audible",
+					 "narrative": "all pulses left foot audible",
+					 "id": "PedalPulsesLeftFootAllNone|ALLAUDIBLE",
+					 "none": true
+				 },{
+					 "title": "Not Present",
+					 "narrative": "all pulses left foot not present",
+					 "id": "PedalPulsesLeftFootAllNone|ALLNOTPRESENT",
+					 "none": true
+				 }]
+			 },{
+				 "title": "Left Dorsalis Pedis",
+				 "narrative": "left dorsalis pedis",
+				 "id": "PedalPulsesLeftFoot|DORSALISPEDIS"
+			 },{
+				 "title": "Left Posterior Tibial",
+				 "narrative": "left posterior tibial",
+				 "id": "PedalPulsesLeftFoot|POSTERIORTIBIAL"
+			 },{
+				 "title": "Left Popliteal",
+				 "narrative": "left popliteal",
+				 "id": "PedalPulsesLeftFoot|POPLITEAL"
+			 }]
+		 },{
+			 "title": "",
+			 "narrative": "",
+       "narrativeAfter": "",
+       "beforeGroup": {
+        "plural": "",
+        "singular": ""
+    },
+    "afterGroup": {
+        "plural": "",
+        "singular": ""
+    },
+			 "id": "PedalPulsesRightFootAnswers",
+			 "options": [{
+				 "title": "Palpable",
+				 "narrative": "palpable",
+				 "id": "PedalPulsesRightFootAnswers|PALPABLE"
+			 },{
+				 "title": "Audible",
+				 "narrative": "audible",
+				 "id": "PedalPulsesRightFootAnswers|AUDIBLE"
+			 },{
+				 "title": "Not present",
+				 "narrative": "not present",
+				 "id": "PedalPulsesRightFootAnswers|NOT PRESENT"
+			 }],
+			 "children": [{
+				 "title": "All Pulses Right Foot",
+				 "narrative": "",
+				 "id": "PedalPulsesRightFootAllNone",
+				 "children": [{
+					 "title": "Palpable",
+					 "narrative": "all pulses right foot palpable",
+					 "id": "PedalPulsesRightFootAllNone|ALLPALPABLE",
+					 "none": true
+				 },{
+					 "title": "Audible",
+					 "narrative": "all pulses right foot audible",
+					 "id": "PedalPulsesRightFootAllNone|ALLAUDIBLE",
+					 "none": true
+				 },{
+					 "title": "Not Present",
+					 "narrative": "all pulses right foot not present",
+					 "id": "PedalPulsesRightFootAllNone|ALLNOTPRESENT",
+					 "none": true
+				 }]
+			 },{
+				 "title": "Right Dorsalis Pedis",
+				 "narrative": "right dorsalis pedis",
+				 "id": "PedalPulsesRightFoot|DORSALISPEDIS"
+			 },{
+				 "title": "Right Posterior Tibial",
+				 "narrative": "right posterior tibial",
+				 "id": "PedalPulsesRightFoot|POSTERIORTIBIAL"
+			 },{
+				 "title": "Right Popliteal",
+				 "narrative": "right popliteal",
+				 "id": "PedalPulsesRightFoot|POPLITEAL"
+			 }]
+		 }],
+		 "children": []
+	 },
+      {
+        "question": "Pain description.",
+        "id": "8283avsdsaasadswqwwqddasdac130003_yes",
+        "rule": "true",
+        "kind": {
+          "type": "list",
+          "multiselection": true
+        },
+        "narrative": {
+            "before": {
+                "singular": "before list"
+            },
+            "after": {
+                "singular": "after list"
+            }
+        },
+        "options": [
+          {
+              "none": true,
+              "title": "None of them",
+              "narrative": "NONE",
+              "id": "some_id"
+          },
+          {
+            "title": "Sharp",
+            "narrative": " sharp pain",
+            "id": "33a1059asd1ea-82b4-0242ac130003"
+          },
+          {
+            "title": "Burning",
+            "narrative": " burning pain",
+            "id": "33a10qwd941-11ea-82b4-0242ac130003"
+          },
+          {
+            "title": "Stabbing",
+            "narrative": " stabbing pain",
+            "id": "33a1059asfaawa-82b4-0242ac130003"
+          },
+          {
+            "title": "Aching",
+            "narrative": " aching pain",
+            "id": "33a1059a-5dqwdea-82b4-0242ac130003"
+          },
+          {
+            "title": "Shooting",
+            "narrative": " shooting pain",
+            "id": "33a1059asfaawasdas2ac130003"
+          },
+          {
+            "title": "Dull",
+            "narrative": " dull pain",
+            "id": "33a1059a-5dqwdea-82b4-02sadasd03"
+          }
+        ],
+        "children": [{
+          "question": "",
+          "id": "5a130ab8-6wkdp32-bc55-0242ac130003",
+          "rule": "true",
+          "narrative": {
+              "before": {
+                  "singular": "START"
+              },
+              "afterChildren": "END"
+          },
+          "kind": {
+            "type": "reusable",
+            "filename": "5a130ab8-6934-11ea-bc55-0242ac130003"
+          },
+          "options": [],
+          "children": []
+        }]
+      },
+      {
+        "question": "Pain region.",
+        "id": "8283aasdwqqw21-82b4-0242asdac130003_yes",
+        "rule": "true",
+        "kind": {
+          "type": "image",
+          "imagePath": "Body.png",
+          "multiselection": true
+        },
+        "options": [
+          {
+            "polygon": [109,40,113,25,118,17,120,10,129,6,139,5,151,1,164,6,174,11,177,30,180,47,181,61,178,78,170,91,156,102,146,109,129,103,119,92,117,74,109,60,109,47],
+            "narrative": " as a ‘headache",
+            "title": "Head",
+            "id": "e666f1b2-5946-11ea-8e2d-0242ac130003"
+          },
+          {
+            "polygon": [34,185,37,256,34,305,33,326,31,367,23,407,21,424,2,452,8,458,18,453,15,483,17,491,25,477,24,492,29,496,34,478,38,487,46,489,50,474,53,479,58,421,60,386,64,372,71,348,74,329,78,310,73,290,74,275,78,266,77,245,75,231,71,207,70,191],
+            "narrative": " as a right hand",
+            "title": "Right hand",
+            "id": "e666f1b2-5wevwve3ea-8e2d-0242ac130003"
+          },
+          {
+            "polygon": [228,185,229,200,224,218,218,235,221,257,221,274,221,290,220,315,223,338,229,360,233,379,236,393,242,411,242,425,239,438,239,454,248,476,245,463,250,487,255,475,261,486,271,489,282,487,281,456,289,458,290,446,281,422,275,408,270,384,267,369,267,348,267,310,257,277,260,256,258,227,260,182,259,160],
+            "narrative": " as a left hand",
+            "title": "Left hand",
+            "id": "e666f1b2-vewe32v8e2d-0242ac130003"
+          }
+        ],
+        "children": []
+      },
+      {
+        "question": "Behaviors directed toward self.",
+        "id": "82asdfb0-5940-asfewfewasd2b4-0242ac130003_yes",
+        "rule": "true",
+        "kind": {
+                        "type": "list",
+              "multiselection": false
+        },
+        "options": [
+          {
+            "title": "Yes",
+            "narrative": "Exhibited",
+            "id": "33a1059a-5941-11ea-82b4-0242ac130003"
+          },
+          {
+            "title": "No",
+            "narrative": "No behaviors observed or reported by staff or this nurse.",
+            "id": "33a107c0-5941-11ea-82b4-0242ac130003"
+          }
+        ],
+        "children": [
+          {
+            "question": "Who observed the behaviors?",
+            "id": "8283afb0-5wsaddsfwe2b4-0242asdac130003_yes",
+            "rule": "isSelected('82asdfb0-5940-asfewfewasd2b4-0242ac130003_yes', '33a1059a-5941-11ea-82b4-0242ac130003')",
+            "narrative": {
+                "before": {
+                    "singular": " help",
+                    "plural": " helps"
+                },
+                "after": {
+                    "singular": " some",
+                },
+                "afterChildren": ""
+            },
+            "kind": {
+              "type": "list",
+              "multiselection": true
+            },
+            "options": [
+              {
+                "title": "Nurse",
+                "narrative": " witnessed by this nurse",
+                "id": "33a1059asd1ea-82b4-0242ac130003"
+              },
+              {
+                "title": "Staff",
+                "narrative": " witnessed by staff",
+                "id": "33a10qwd941-11ea-82b4-0242ac130003"
+              },
+              {
+                "title": "Resident",
+                "narrative": " witnessed by other residents",
+                "id": "33a1059asfaawa-82b4-0242ac130003"
+              },
+              {
+                "title": "Visitor",
+                "narrative": " witnessed by visitor",
+                "id": "33a1059a-5dqwdea-82b4-0242ac130003"
+              }
+            ],
+            "children": []
+          },
+          {
+            "question": "Time behavior was witnessed.",
+            "id": "wefwef-82b4-0242asdac130003_yes",
+            "rule": "isSelected('82asdfb0-5940-asfewfewasd2b4-0242ac130003_yes', '33a1059a-5941-11ea-82b4-0242ac130003')",
+            "kind": {
+              "type": "dateTime",
+             "format":"h:mm a"
+            },
+            "options": [
+              {
+                "title": "",
+                "narrative": " at approx. ",
+                "id": "33a1059a-5941-11ea-82b4-0242ac130003"
+              }
+            ],
+            "children": []
+          },
+          {
+            "question": "Precipitating factors.",
+            "id": "8283afb0-5wsaddasdasdwq12dac130003_sdafwews",
+            "rule": "isSelected('82asdfb0-5940-asfewfewasd2b4-0242ac130003_yes', '33a1059a-5941-11ea-82b4-0242ac130003')",
+            "kind": {
+              "type": "list",
+              "multiselection": false
+            },
+            "options": [
+              {
+                "title": "Confrontation from another patient",
+                "narrative": " precipitated by confrontation from another resident.",
+                "id": "33a1059asd1ea-82b4-0242ac130003"
+              },
+              {
+                "title": "Pain",
+                "narrative": " precipitated possibly by pain.",
+                "id": "33a10qwd941-11ea-82b4-0242ac130003"
+              },
+              {
+                "title": "Hunger",
+                "narrative": " precipitated possibly by hunger.",
+                "id": "33a1059asfaawa-82b4-0242ac130003"
+              },
+              {
+                "title": "Social Activity",
+                "narrative": " precipitated possibly by social activity.",
+                "id": "33a1059a-5dqwdea-82b4-0242ac130003"
+              }
+            ],
+            "children": []
+          }, {
+            "question": "Do you want to add one more?",
+            "id": "8283afb0-qwasddwwdeac130003_yes",
+            "rule": "isSelected('82asdfb0-5940-asfewfewasd2b4-0242ac130003_yes', '33a1059a-5941-11ea-82b4-0242ac130003')",
+            "kind": {
+                            "type": "list",
+              "multiselection": false
+            },
+            "options": [
+              {
+                "title": "Yes",
+                "repetitiveId": "82asdfb0-5940-asfewfewasd2b4-0242ac130003_yes",
+                "narrative": "",
+                "id": "33a1059a-5941-11ea-82b4-0242ac130003"
+              },
+              {
+                "title": "No",
+                "narrative": "",
+                "id": "33a107c0-5941-11ea-82b4-0242ac130003"
+              }
+            ],
+            "children": []
+          }
+        ]
+      }, {
+        "question": "Last root answer",
+        "id": "8283afb0-5wdff3csdsdcdafwews",
+        "rule": "true",
+        "kind": {
+          "type": "list",
+          "multiselection": false
+        },
+        "options": [
+          {
+            "title": "Confrontation from another patient",
+            "narrative": " precipitated by confrontation from another resident.",
+            "id": "33a1059asd1ea-82b4-0242ac130003"
+          },
+          {
+            "title": "Pain",
+            "narrative": " precipitated possibly by pain.",
+            "id": "33a10qwd941-11ea-82b4-0242ac130003"
+          },
+          {
+            "title": "Hunger",
+            "narrative": " precipitated possibly by hunger.",
+            "id": "33a1059asfaawa-82b4-0242ac130003"
+          },
+          {
+            "title": "Social Activity",
+            "narrative": " precipitated possibly by social activity.",
+            "id": "33a1059a-5dqwdea-82b4-0242ac130003"
+          }
+        ],
+        "children": [{
+          "question": "",
+          "id": "5a13238d3d23-0242ac130003",
+          "rule": "isSelected('8283afb0-5wdff3csdsdcdafwews', '33a1059asd1ea-82b4-0242ac130003')",
+          "kind": {
+            "type": "reusable",
+            "filename": "5a130ab8-6934-11ea-bc55-0242ac130003"
+          },
+          "narrative": {
+              "before": {
+                  "singular": "START"
+              },
+              "afterChildren": "END"
+          },
+          "options": [],
+          "children": []
+        },{
+          "question": "Time behavior was witnessed.",
+          "id": "wefwef-82d223d2dac130003_yes",
+          "rule": "isSelected('8283afb0-5wdff3csdsdcdafwews', '33a1059asd1ea-82b4-0242ac130003')",
+          "kind": {
+            "type": "dateTime",
+             "format":"h:mm a"
+          },
+          "options": [
+            {
+              "title": "",
+              "narrative": " at approx. ",
+              "id": "33a1059a-5941-11ea-82b4-0242ac130003"
+            }
+          ],
+          "children": []
+        }
+        ]
+      }
+    ]
+}

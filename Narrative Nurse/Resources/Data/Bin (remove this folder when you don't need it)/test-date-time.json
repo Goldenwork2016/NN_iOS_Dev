@@ -1,0 +1,55 @@
+{
+    "questions":[
+       {
+          "question":"Date & time",
+          "id":"date_and_time",
+          "rule":"true",
+          "kind":{
+             "type":"dateTime",
+             "format":"EEEE, MMM d, yyyy 'at' h:mm a"
+          },
+          "options":[
+             {
+                "title":"",
+                "narrative":" [Date & Time] ",
+                "id":"33a1059a-5941-11ea-82b4-0242ac130003_date_and_time"
+             }
+          ],
+          "children":[]
+       },
+       {
+          "question":"Date Only",
+          "id":"date",
+          "rule":"true",
+          "kind":{
+             "type":"dateTime",
+             "format":"EEEE, MMM d, yyyy"
+          },
+          "options":[
+             {
+                "title":"",
+                "narrative":" [Date Only] ",
+                "id":"33a1059a-5941-11ea-82b4-0242ac130003_dateTime"
+             }
+          ],
+          "children":[]
+       },
+       {
+          "question":"Time Only",
+          "id":"time",
+          "rule":"true",
+          "kind":{
+             "type":"dateTime",
+             "format":"h:mm a"
+          },
+          "options":[
+             {
+                "title":"",
+                "narrative":" [Time Only] ",
+                "id":"33a1059a-5941-11ea-82b4-0242ac130003_time"
+             }
+          ],
+          "children":[]
+       }
+    ]
+ }

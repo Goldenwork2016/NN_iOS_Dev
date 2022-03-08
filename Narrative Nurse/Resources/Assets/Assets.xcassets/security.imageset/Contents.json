@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "security.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}

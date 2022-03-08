@@ -1,0 +1,245 @@
+{
+    "questions": [
+        {
+            "narrative": {
+                "after": {
+                    "plural": "",
+                    "singular": ""
+                },
+                "before": {
+                    "plural": "",
+                    "singular": ""
+                },
+                "afterChildren": "."
+            },
+            "id": "30D9CC15-DA9A-4379-8250-BDCB53B9B49F",
+            "children": [],
+            "question": "Pedal Pulses",
+            "kind": {
+                "type": "grouped",
+                "linkingVerb": {
+                    "plural": "are",
+                    "singular": "is"
+                },
+                "outputOrder": "Question/Answer"
+            },
+            "options": [
+                {
+                    "id": "C1BB4FBB-9675-480B-BE59-06438A1DFAA5",
+                    "title": "Test Group #1",
+                    "beforeGroup": {
+                        "plural": "beforeGroup-FirstQuestion-FirstGroup-plural",
+                        "singular": "beforeGroup-FirstQuestion-FirstGroup-singular"
+                    },
+                    "afterGroup": {
+                        "plural": "afterGroup-FirstQuestion-FirstGroup-plural",
+                        "singular": "afterGroup-FirstQuestion-FirstGroup-singular"
+                    },
+                    "options": [
+                        {
+                            "id": "4B69175D-941F-4642-82AB-3ACE95BC8731",
+                            "narrative": "palpable",
+                            "title": "Palpable"
+                        },
+                        {
+                            "id": "0921A2C8-F951-49B1-8472-F1E7307CA07D",
+                            "narrative": "audible",
+                            "title": "Audible"
+                        },
+                        {
+                            "id": "A5CA224A-5571-4A4F-B817-51D0F60751B8",
+                            "narrative": "not present",
+                            "title": "Not Present"
+                        }
+                    ],
+                    "narrative": "",
+                    "children": [
+                        {
+                            "id": "256128A4-F2D8-4969-8B94-5BB3383877B8",
+                            "narrative": "left dorsalis pedis",
+                            "title": "Left Dorsalis Pedis"
+                        },
+                        {
+                            "id": "B996F352-D8F5-45E8-B5EF-810F6BFB41F6",
+                            "narrative": "left posterior tibial",
+                            "title": "Left Posterior Tibial"
+                        },
+                        {
+                            "id": "87B0AC8B-23CA-4972-8C9A-C1FA02DCB879",
+                            "narrative": "left popliteal",
+                            "title": "Left Popliteal"
+                        },
+                        {
+                            "id": "F17EBFDA-5EBF-4626-9E1A-6933CBD665A4",
+                            "title": "All Pulses Left Foot",
+                            "narrative": "",
+                            "children": [
+                                {
+                                    "id": "852E02CB-9256-41DC-868C-388365179B11",
+                                    "title": "Palpable",
+                                    "narrative": "all pulses left foot are palpable",
+                                    "none": true
+                                },
+                                {
+                                    "id": "438A4AF4-70F6-44FB-BD99-F4579EE54C69",
+                                    "title": "Audible",
+                                    "narrative": "all pulses left foot are audible",
+                                    "none": true
+                                },
+                                {
+                                    "id": "2E9A41D7-5487-4B45-B589-3939A715AF05",
+                                    "title": "Not Present",
+                                    "narrative": "all pulses left foot are not present",
+                                    "none": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "14ED4A08-D21D-4D97-BD9E-1BE5AD4480D3",
+                    "title": "Test group #2",
+                    "beforeGroup": {
+                        "plural": "beforeGroup-FirstQuestion-SecondGroup-plural",
+                        "singular": "beforeGroup-FirstQuestion-SecondGroup-singular"
+                    },
+                    "afterGroup": {
+                        "plural": "afterGroup-FirstQuestion-SecondGroup-plural",
+                        "singular": "afterGroup-FirstQuestion-SecondGroup-singular"
+                    },
+                    "options": [
+                        {
+                            "id": "14F6959E-1ABA-495D-91E6-1A79F45FA037",
+                            "narrative": "palpable",
+                            "title": "Palpable"
+                        },
+                        {
+                            "id": "C6CBFA06-E267-48A2-8489-B299F310F7A8",
+                            "narrative": "audible",
+                            "title": "Audible"
+                        },
+                        {
+                            "id": "4C2E713B-C00C-4E41-BDCC-AF1038A86D33",
+                            "narrative": "not present",
+                            "title": "Not Present"
+                        }
+                    ],
+                    "narrative": "",
+                    "children": [
+                        {
+                            "id": "E9ED65BB-174D-4D35-A9A3-149C430E741B",
+                            "narrative": "right dorsalis pedis",
+                            "title": "Right Dorsalis Pedis"
+                        },
+                        {
+                            "id": "8E62795F-279A-40DB-ACC8-9320BD531A19",
+                            "narrative": "right posterior tibial",
+                            "title": "Right Posterior Tibial"
+                        },
+                        {
+                            "id": "9B8517D4-FEDA-4F84-BB17-49B689E30D32",
+                            "narrative": "right popliteal",
+                            "title": "Right Popliteal"
+                        },
+                        {
+                            "id": "42DABE2F-375C-4BA5-AFCE-BFF2E397E7E1",
+                            "title": "All Pulses Right Foot",
+                            "narrative": "",
+                            "children": [
+                                {
+                                    "id": "FEC7EB24-1EE6-48F9-92B9-F4304FCCA04A",
+                                    "title": "Palpable",
+                                    "narrative": "all pulses right foot are palpable",
+                                    "none": true
+                                },
+                                {
+                                    "id": "7155A9FD-06FC-41ED-B2A9-CCC29F797174",
+                                    "title": "Audible",
+                                    "narrative": "all pulses right foot are audible",
+                                    "none": true
+                                },
+                                {
+                                    "id": "BE57A5A3-6774-4CED-B820-BE8B7A1B0582",
+                                    "title": "Not Present",
+                                    "narrative": "all pulses right foot are not present",
+                                    "none": true
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "rule": "isSelected('0CC2400D-668D-433C-9052-555EA3F37976','18D9952D-FD06-4E9F-A02E-77EB29E177FA')"
+        },
+        {
+            "narrative": {
+                "after": {
+                    "plural": "",
+                    "singular": ""
+                },
+                "before": {
+                    "plural": "",
+                    "singular": ""
+                },
+                "afterChildren": "."
+            },
+            "id": "293F752C-03D4-47C8-85FE-3110578C2690",
+            "children": [],
+            "question": "Bilateral extremity sensation loss",
+            "kind": {
+                "type": "grouped",
+                "linkingVerb": {
+                    "plural": "LINKING PLURAL",
+                    "singular": "LINKING SINGULAR"
+                },
+                "outputOrder": "Answer/Question"
+            },
+            "options": [
+                {
+                    "narrativeAfter": "",
+                    "id": "48613D63-AC7E-465D-B884-C5E3AD643684",
+                    "title": "This is group title!",
+                    "beforeGroup": {
+                        "plural": "beforeGroup-SecondQuestion-plural",
+                        "singular": "beforeGroup-SecondQuestion-singular"
+                    },
+                    "afterGroup": {
+                        "plural": "afterGroup-SecondQuestion-plural",
+                        "singular": "afterGroup-SecondQuestion-singular"
+                    },
+                    "options": [
+                        {
+                            "id": "A2F37F89-B7CD-4C49-A7B3-07507DC401FE",
+                            "narrative": "full sensation",
+                            "title": "Full Sensation"
+                        },
+                        {
+                            "id": "337E48EC-2EF5-4610-9D95-3A295A6E4F8E",
+                            "narrative": "partial sensation",
+                            "title": "Partial Sensation"
+                        },
+                        {
+                            "id": "A221AD7A-482B-4280-B662-86F8594CFD0F",
+                            "narrative": "no sensation",
+                            "title": "No Sensation"
+                        }
+                    ],
+                    "narrative": "",
+                    "children": [
+                        {
+                            "id": "63259D31-8425-47C5-845D-F8E8EEB3980F",
+                            "narrative": "toes",
+                            "title": "Toes"
+                        },
+                        {
+                            "id": "F2EA6F6F-35CB-42CA-9630-994AE0C9A994",
+                            "narrative": "feet",
+                            "title": "Feet"
+                        }
+                    ]
+                }
+            ],
+            "rule": "true"
+        }
+    ]
+}
